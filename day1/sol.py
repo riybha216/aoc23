@@ -35,8 +35,7 @@ def get_sum(filename):
     with open(filename, 'r') as f:
         for line in f.readlines():
             line_sum = int(process_line(line))
-            print(line_sum)
             total += line_sum
     return total
 
-print(get_sum('day1-p1.txt'))
+print(get_sum('inp.txt'))
